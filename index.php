@@ -46,7 +46,7 @@ $app->post('/', function ($request, $response)
 	foreach ($data['events'] as $event)
 	{
 		$userMessage = $event['message']['text'];
-		if(strtolower($userMessage) == 'halo')
+		if(strtolower($userMessage) == 'hello')
 		{
 			$message = "Halo juga";
             $textMessageBuilder = new \LINE\LINEBot\MessageBuilder\TextMessageBuilder($message);
